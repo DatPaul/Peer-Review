@@ -74,5 +74,5 @@ peer-review/
 ---
 
 ## Autori
-Dat Paul George
-Proiect realizat în cadrul practicii universitare — anul 2, Informatică.
+- Dat Paul George
+- Proiect realizat în cadrul practicii universitare — anul 2, Informatică.
