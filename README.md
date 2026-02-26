@@ -6,7 +6,7 @@ O aplicație web full-stack pentru evaluarea colegială (peer review) a revistel
 
 ## Despre proiect
 
-Platforma a fost dezvoltată ca răspuns la o problemă reală: editorii la început de carieră care doresc să publice o revistă științifică nu găsesc recenzori disponibili. Aplicația rezolvă această problemă printr-un sistem de matching automat între editori și recenzori, bazat pe domeniul revistei și expertiza recenzorului.
+Platforma a fost dezvoltată ca răspuns la următoarea problemă: editorii la început de carieră care doresc să publice o revistă științifică nu găsesc recenzori disponibili. Aplicația rezolvă această problemă printr-un sistem de matching automat între editori și recenzori, bazat pe domeniul revistei și expertiza recenzorului.
 
 ---
 
