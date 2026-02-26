@@ -1,0 +1,83 @@
+/* src/pages/LoginPage.module.css */
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding: 4rem 1rem;
+  min-height: calc(100vh - 4.5rem);
+}
+
+.authCard {
+  width: 100%;
+  max-width: 28rem;
+  padding: 2.5rem;
+  background-color: white;
+  border: 1px solid #ecf0f1;
+  border-radius: 12px;
+}
+
+.title {
+  font-family: 'Lora', serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.form {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+.input, .select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #34495e;
+  background-color: #fdfdfd;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.input:focus, .select:focus {
+  outline: none;
+  border-color: #2c3e50;
+  box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.2);
+}
+
+.submitButton {
+    margin-top: 1rem;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+}
+
+.footerText {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #7f8c8d;
+}
+
+.footerLink {
+    color: #2c3e50;
+    font-weight: 600;
+    text-decoration: none;
+}
+.footerLink:hover {
+    text-decoration: underline;
+}

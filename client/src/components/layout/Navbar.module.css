@@ -1,0 +1,43 @@
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 0 2rem;
+  height: 4.5rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftGroup, .rightGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4f46e5;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+.link {
+  color: #475569;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 150ms ease-in-out;
+  font-size: 0.9rem;
+}
+.link:hover {
+  color: #4f46e5;
+}
+
+.buttonAsLink {
+  composes: link;
+  background: none; border: none; padding: 0; cursor: pointer;
+}

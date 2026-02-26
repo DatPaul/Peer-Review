@@ -1,0 +1,106 @@
+/* src/pages/JournalDetailPage.module.css */
+
+.chatContainer {
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  border: 1px solid #e2e8f0; /* slate-200 */
+  border-radius: 0.75rem; /* 12px */
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.messagesArea {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.messageBubble {
+  max-width: 75%;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  word-wrap: break-word;
+}
+.myMessage {
+  align-self: flex-end;
+  background-color: #2c3e50; /* Albastru academic */
+  color: white;
+  border-bottom-right-radius: 0.25rem;
+}
+.theirMessage {
+  align-self: flex-start;
+  background-color: #ecf0f1; /* Gri deschis */
+  color: #34495e;
+  border-bottom-left-radius: 0.25rem;
+}
+.senderInfo {
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+.attachmentLink {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: inherit;
+  opacity: 0.9;
+}
+
+/* === AICI SUNT MODIFICĂRILE CHEIE === */
+
+.inputArea {
+  padding: 1rem;
+  border-top: 1px solid #e2e8f0;
+  background-color: #f8fafc; /* Fundal subtil diferit */
+}
+
+.inputForm {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Spațiu între elemente */
+}
+
+.textInput {
+  flex: 1; /* Ocupă tot spațiul disponibil */
+  padding: 0.625rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.textInput:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.4);
+}
+
+/* Stil pentru butonul de atașare (agrafa) */
+.attachButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
+  color: #475569; /* slate-600 */
+  transition: all 150ms ease-in-out;
+}
+.attachButton:hover {
+  border-color: #2c3e50;
+  color: #2c3e50;
+}
+/* Ascundem input-ul de fișier real */
+.fileInput {
+    display: none;
+}
