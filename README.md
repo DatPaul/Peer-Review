@@ -1,6 +1,6 @@
 # Peer Review Platform
 
-O aplicație web full-stack pentru evaluarea colegială (peer review) a revistelor științifice, care conectează editori cu recenzori calificați pe baza domeniului de expertiză.
+O aplicație web full-stack pentru peer review a revistelor științifice, care conectează editori cu recenzori calificați pe baza domeniului de expertiză.
 
 ---
 
@@ -12,13 +12,13 @@ Platforma a fost dezvoltată ca răspuns la următoarea problemă: editorii la �
 
 ## Funcționalități principale
 
-- **Matching automat** — platforma asignează un recenzor potrivit pentru fiecare revistă în funcție de domeniu
-- **Flux complet de peer review** — de la trimiterea revistei până la finalizarea recenziei
-- **Forum de comunicare** — canal dedicat de comunicare între editor și recenzor pe durata procesului
-- **Sistem de rating** — editorul poate acorda un rating recenzorului după finalizarea recenziei
-- **Roluri distincte** — Admin, Editor și Recenzor, fiecare cu dashboard propriu
-- **Sistem de notificări** — utilizatorii sunt notificați la fiecare etapă a procesului
-- **Aprobare admin** — conturile de recenzor necesită aprobare înainte de a putea accepta reviste
+- **Matching automat** - platforma asignează un recenzor potrivit pentru fiecare revistă în funcție de domeniu
+- **Flux complet de peer review** - de la trimiterea revistei până la finalizarea recenziei
+- **Forum de comunicare** - canal dedicat de comunicare între editor și recenzor pe durata procesului
+- **Sistem de rating** - editorul poate acorda un rating recenzorului după finalizarea recenziei
+- **Roluri distincte** - Admin, Editor și Recenzor, fiecare cu dashboard propriu
+- **Sistem de notificări** - utilizatorii sunt notificați la fiecare etapă a procesului
+- **Aprobare admin** - conturile de recenzor necesită aprobare înainte de a putea accepta reviste
 
 ---
 
@@ -68,11 +68,11 @@ peer-review/
 3. Recenzorul acceptă sau refuză revista
 4. La acceptare, se deschide un **forum de comunicare** între editor și recenzor
 5. Editorul încarcă fișierul revistei; recenzorul trimite recenzia
-6. Recenzorul marchează recenzia ca finalizată — forumul este arhivat
+6. Recenzorul marchează recenzia ca finalizată - forumul este arhivat
 7. Editorul acordă un **rating** recenzorului
 
 ---
 
 ## Autori
 - Dat Paul George
-- Proiect realizat în cadrul practicii universitare — anul 2, Informatică.
+- Proiect realizat în cadrul practicii universitare - anul 2, Informatică.
