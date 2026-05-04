@@ -55,8 +55,8 @@ peer-review/
 ├── client/                  # React frontend
 │   └── src/
 │       ├── api/             # Axios configuration
-│       ├── components/      # Reusable componenets
-│       ├── context/         # Authethication context
+│       ├── components/      # Reusable components
+│       ├── context/         # Authenthication context
 │       ├── hooks/           # Custom hooks
 │       └── pages/           # Page components by role
 ├── server/                  # Express backend
