@@ -1,78 +1,94 @@
 # Peer Review Platform
 
-O aplicație web full-stack pentru peer review a revistelor științifice, care conectează editori cu recenzori calificați pe baza domeniului de expertiză.
+A full-stack web application for academic journal peer review, 
+connecting editors with qualified reviewers based on their 
+domain of expertise.
 
 ---
 
-## Despre proiect
+## About the Project
 
-Platforma a fost dezvoltată ca răspuns la următoarea problemă: editorii la început de carieră care doresc să publice o revistă științifică nu găsesc recenzori disponibili. Aplicația rezolvă această problemă printr-un sistem de matching automat între editori și recenzori, bazat pe domeniul revistei și expertiza recenzorului.
-
----
-
-## Funcționalități principale
-
-- **Matching automat** - platforma asignează un recenzor potrivit pentru fiecare revistă în funcție de domeniu
-- **Flux complet de peer review** - de la trimiterea revistei până la finalizarea recenziei
-- **Forum de comunicare** - canal dedicat de comunicare între editor și recenzor pe durata procesului
-- **Sistem de rating** - editorul poate acorda un rating recenzorului după finalizarea recenziei
-- **Roluri distincte** - Admin, Editor și Recenzor, fiecare cu dashboard propriu
-- **Sistem de notificări** - utilizatorii sunt notificați la fiecare etapă a procesului
-- **Aprobare admin** - conturile de recenzor necesită aprobare înainte de a putea accepta reviste
+Early-career editors who want to publish a scientific journal 
+often struggle to find available, qualified reviewers. This 
+platform solves that problem through an automatic matching 
+system that pairs editors with reviewers based on the journal's 
+domain and the reviewer's declared expertise.
 
 ---
 
-## Tehnologii utilizate
+## Features
 
-| Strat | Tehnologie |
-|-------|-----------|
+- **Automatic Matching** - the platform assigns a suitable 
+reviewer for each journal based on domain alignment
+- **Complete Review Workflow** - from journal submission to 
+finalized review
+- **Communication Forum** - a dedicated channel between editor 
+and reviewer throughout the review process, with PDF file upload
+- **Rating System** - editors can rate reviewers after review 
+completion
+- **Role-Based Access** - three distinct roles: Admin, Editor, 
+and Reviewer, each with their own dashboard
+- **Notification System** - users are notified at each stage 
+of the process
+- **Admin Approval** - reviewer accounts require admin approval 
+before they can accept journals
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
 | Frontend | React 18, React Router, Tailwind CSS |
 | Backend | Node.js, Express |
-| Bază de date | MySQL |
-| Autentificare | JWT (JSON Web Tokens) |
-| Upload fișiere | Multer |
+| Database | MySQL |
+| Authentication | JWT (JSON Web Tokens) |
+| File Upload | Multer |
 | HTTP Client | Axios |
 
 ---
 
-## Arhitectura proiectului
+## Project Structure
 
 ```
 peer-review/
-├── client/                  # Aplicația React (frontend)
+├── client/                  # React frontend
 │   └── src/
-│       ├── api/             # Configurare Axios
-│       ├── components/      # Componente reutilizabile (Button, Modal, Navbar etc.)
-│       ├── context/         # Context de autentificare
+│       ├── api/             # Axios configuration
+│       ├── components/      # Reusable componenets
+│       ├── context/         # Authethication context
 │       ├── hooks/           # Custom hooks
-│       └── pages/           # Paginile aplicației (admin, editor, reviewer)
-├── server/                  # Serverul Express (backend)
-│   ├── config/              # Configurare bază de date
-│   ├── controllers/         # Logica de business
-│   ├── middleware/          # Autentificare JWT, upload fișiere
-│   ├── routes/              # Definirea rutelor API
-│   └── scripts/             # Script de seed pentru baza de date
-└── package.json             # Scripts pentru rularea monorepo-ului
+│       └── pages/           # Page components by role
+├── server/                  # Express backend
+│   ├── config/              # Database configuration
+│   ├── controllers/         # Business logic
+│   ├── middleware/          # JWT auth, file upload
+│   ├── routes/              # API route definitions
+│   └── scripts/             # Database seed script
+└── package.json             
 ```
 
-## Fluxul aplicației
+## Application Flow
 
-### Înregistrare și aprobare
-1. Utilizatorul își creează un cont ca **Editor** sau **Recenzor**
-2. Conturile de Editor sunt activate imediat
-3. Conturile de Recenzor necesită aprobarea unui **Admin**
+### Registration and Approval
+1. User creates an account as either **Editor** or **Reviewer**
+2. Editor accounts are activated immediately
+3. Reviewer accounts require approval from an **Admin**
 
-### Procesul de peer review
-1. Editorul creează o revistă și selectează domeniul
-2. Platforma asignează automat un recenzor cu expertiză în acel domeniu
-3. Recenzorul acceptă sau refuză revista
-4. La acceptare, se deschide un **forum de comunicare** între editor și recenzor
-5. Editorul încarcă fișierul revistei; recenzorul trimite recenzia
-6. Recenzorul marchează recenzia ca finalizată - forumul este arhivat
-7. Editorul acordă un **rating** recenzorului
+### Peer Review Process
+1. Editor creates a journal and selects its domain
+2. Platform automatically assigns a reviewer with matching expertise
+3. Reviewer accepts or declines the journal
+4. Upon acceptance, a **communication forum** opens between 
+editor and reviewer
+5. Editor uploads the journal file; reviewer submits their review
+6. Reviewer marks the review as complete - forum is archived
+7. Editor submits a **rating** for the reviewer
 
 ---
 
-## Autori
-- Dat Paul George
-- Proiect realizat în cadrul practicii universitare - anul 2, Informatică.
+## Author
+
+Dat Paul George  
+Second-year Computer Science student, West University of Timișoara  
+Built during university practice stage
